@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700&display=swap");
+
+$common-font: "Poppins", sans-serif;
+$heading-font: "Montserrat", sans-serif;
+$transition: 0.5s all ease;
+$all-size: 16px;
+$white-color: #ffffff;
+$grey-color: #777777;
+$black-color: #0d1820;
+$gradient-green: linear-gradient(
+  90deg,
+  rgba(16, 195, 23, 1) 23%,
+  rgba(21, 208, 154, 1) 64%
+);
+
+/*-- Default CSS --*/
+body {
+  font-family: "Poppins", sans-serif;
+  color: #777777;
+  background-color: #ffffff;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.3;
+  font-family: "Montserrat", sans-serif;
+  color: #0d1820;
+}
+
+p {
+  line-height: 1.8;
+}
+
+a {
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.d-table {
+  width: 100%;
+  height: 100%;
+}
+
+.d-table-cell {
+  vertical-align: middle;
+}
+
+.ptb-100 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.pt-100 {
+  padding-top: 100px;
+}
+
+.pb-70 {
+  padding-bottom: 70px;
+}
+
+.pb-100 {
+  padding-bottom: 100px;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.btn.focus,
+.btn:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+/*-- End Default CSS --*/
+/*--Header Top --*/
+.one-header-top {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #f0f0f0;
+  padding-left: 40px;
+  padding-right: 40px;
+
+  .header-social {
+    ul {
+      margin: 0;
+      padding: 0;
+
+      li {
+        list-style-type: none;
+        display: inline-block;
+        margin-right: 10px;
+
+        &:nth-child(2) {
+          a {
+            color: #e048e2;
+          }
+        }
+
+        &:nth-child(4) {
+          margin-right: 0;
+          a {
+            color: #2ee723;
+          }
+        }
+        a {
+          display: block;
+          color: #0b5998;
+          font-size: 20px;
+          &:hover {
+            transform: rotateY(350deg);
+          }
+        }
+      }
+    }
+  }
+  .header-clients {
+    text-align: center;
+
+    p {
+      font-size: 14px;
+      color: #606060;
+      margin-bottom: 0;
+    }
+  }
+  .header-call {
+    text-align: right;
+
+    ul {
+      margin: 0;
+      padding: 0;
+
+      li {
+        list-style-type: none;
+        display: inline-block;
+        margin-right: 10px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+        span {
+          vertical-align: middle;
+          display: inline-block;
+          color: #606060;
+          font-size: 22px;
+        }
+        a {
+          display: inline-block;
+          color: #232f77;
+          font-weight: 600;
+          &:hover {
+            color: #606060;
+          }
+        }
+      }
+    }
+  }
+}
