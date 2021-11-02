@@ -155,9 +155,9 @@ button:focus {
           font-size: 22px;
         }
         a {
+          letter-spacing: 1.5px;
           display: inline-block;
           color: #232f77;
-          font-weight: 600;
           &:hover {
             color: #606060;
           }
@@ -166,3 +166,78 @@ button:focus {
     }
   }
 }
+
+/*--Navbar--*/
+.navbar-light {
+  padding-left: 55px;
+  padding-right: 55px;
+  background-color: $white-color;
+  box-shadow: 0px 20px 20px 0px #dddddd52;
+
+  .navbar-nav {
+    .nav-link {
+      color: $black-color;
+      margin-right: 15px;
+      margin-left: 15px;
+    }
+    .active > .nav-link,
+    .nav-link.active,
+    .nav-link.show,
+    .show > .nav-link {
+      color: #12ca59;
+    }
+    .nav-link:focus,
+    .nav-link:hover {
+      color: #12ca59;
+    }
+    .nav-link:focus,
+    .nav-link:hover {
+      color: #12ca59;
+    }
+  }
+  .navbar-nav {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .side-nav {
+    width: 21%;
+    a {
+      display: inline-block;
+      color: $black-color;
+    }
+    .side-nav-right {
+      color: $white-color;
+      position: relative;
+      background-color: $black-color;
+      z-index: 1;
+      padding: 10px 16px 12px;
+      border-radius: 4px;
+
+      &:before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: $gradient-green;
+        z-index: -1;
+        border: radius 4px;
+        transition: $transition;
+      }
+      i {
+        position: relative;
+        display: inline-block;
+        font-size: 20px;
+        top: 4px;
+        margin-right: 4px;
+      }
+      &:hover {
+        &:before {
+          width: 0;
+        }
+      }
+    }
+  }
+}
+/*-- End Navbar --*/
