@@ -25,6 +25,24 @@ jQuery(function ($) {
   //   }
   // });
 
+  //Banner Slider
+  $(".banner-slider").owlCarousel({
+    items: 1,
+    loop: true,
+    margin: 15,
+    singleItem: true,
+    nav: true,
+    dots: false,
+    smartSpeed: 1000,
+    autoplay: true,
+    autoplayTimeout: 4000,
+    autoplayHoverPause: true,
+    navText: [
+      "<i class='bx bx-left-arrow-alt'></i>",
+      "<i class='bx bx-right-arrow-alt'></i>",
+    ],
+  });
+
   // Preloader
   jQuery(window).on("load", function () {
     jQuery(".loader").fadeOut(500);
