@@ -624,11 +624,13 @@ button:focus {
 			}
 		}
 	}
-	
+
 
 	.section-title {
     	text-align: left;
     	margin-bottom: 30px;
+		
+	
 
 	.subtitle {
 		display: inline-block;
@@ -696,3 +698,163 @@ button:focus {
 		
 	}
 }
+/*--End of Counter--*/
+
+/*--Service --*/
+.service {
+	nav {
+		.nav-tabs {
+			display: flex;
+			flex-wrap: wrap;
+			border-bottom: 0;
+
+			.nav-default {
+				display: inline-block;
+				margin-bottom: 30px;
+				flex: 0 0 16.6666666667%;
+				max-width: 16.6666666667%;
+				padding-left: 15px;
+				padding-right: 15px;
+
+				&.active {
+					.service-item {
+						&:before {
+							opacity: 1;
+						}
+
+						i {
+							color: $white-color;
+						}
+
+						span {
+							color: $white-color;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.service-item {
+		text-align: center;
+		background-color: #efefef;
+		border-radius: 4px;
+		padding: 20px 40px 18px;
+		position: relative;
+		z-index: 1;
+
+		&:before {
+			position: absolute;
+			content: "";
+			width: 100%;
+			height: 100%;
+			left: 0;
+			top: 0;
+			background: $gradient-green;
+			border-radius: 4px;
+			opacity: 0;
+			z-index: -1;
+		}
+
+		i {
+			display: block;
+			color: $black-color;
+			font-size: 50px;
+			margin-bottom: 15px;
+			transition: $transition;
+		}
+
+		span {
+			display: block;
+			color: $black-color;
+			font-weight: 500;
+			font-size: $all-size;
+			transition: $transition;
+		}
+	}
+
+	.service-advisor {
+		padding: 35px 35px 35px;
+		border-radius: 4px;
+		box-shadow: 0px 0px 20px 0px #dddddd96;
+
+		.advisor-img {
+			img {
+				width: 100%;
+			}
+		}
+
+		.advisor-content {
+			h2 {
+				font-size: 28px;
+				font-weight: 700;
+				margin-bottom: 16px;
+			}
+
+			p {
+				margin-bottom: 20px;
+			}
+
+			ul {
+				margin: 0;
+				padding: 0;
+				margin-bottom: 22px;
+
+				li {
+					list-style-type: none;
+					display: block;
+					color: #444444;
+					margin-bottom: 12px;
+					font-size: $all-size;
+
+					&:last-child {
+						margin-bottom: 0;
+					}
+
+					i {
+						display: inline-block;
+						font-size: 20px;
+						position: relative;
+						top: 3px;
+						margin-right: 3px;
+						background: $gradient-green;
+						background-clip: text;
+						-webkit-background-clip: text;
+						-webkit-text-fill-color: transparent;
+					}
+				}
+			}
+
+			.advisor-link {
+				display: inline-block;
+
+				&:hover {
+					i {
+						left: -3px;
+					}
+				}
+
+				a {
+					display: inline-block;
+					font-weight: 600;
+					font-size: $all-size;
+					background: $gradient-green;
+					background-clip: text;
+					-webkit-background-clip: text;
+					-webkit-text-fill-color: transparent;
+				}
+
+				i {
+					display: inline-block;
+					color: #12ca59;
+					font-size: 21px;
+					position: relative;
+					top: 4px;
+					left: 0;
+					transition: $transition;
+				}
+			}
+		}
+	}
+}
+
