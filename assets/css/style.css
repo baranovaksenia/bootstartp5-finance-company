@@ -944,13 +944,6 @@ button:focus {
   position: relative;
 }
 
-.help-area .help-img {
-  position: absolute;
-  top: 120px;
-  right: 0;
-  max-width: 435px;
-}
-
 .help-area .help-item {
   max-width: 100%;
 }
@@ -1034,5 +1027,152 @@ button:focus {
   margin-bottom: 0;
   font-size: 15px;
   color: #b2bac0;
+}
+
+/*-- Quote --*/
+.quote-area {
+  padding-bottom: 110px;
+}
+
+.quote-area .row {
+  -webkit-box-shadow: 0px 0px 20px 0px #dddddd91;
+          box-shadow: 0px 0px 20px 0px #dddddd91;
+  border-radius: 4px;
+}
+
+.quote-area .quote-content {
+  padding: 28px 35px 35px;
+}
+
+.quote-area .quote-content h3 {
+  font-weight: 700;
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+
+.quote-area .quote-content p {
+  font-size: 15px;
+  margin-bottom: 18px;
+}
+
+.quote-area .quote-content a {
+  color: #ffffff;
+  position: relative;
+  background-color: #0d1820;
+  z-index: 1;
+  padding: 10px 80px 12px;
+  border-radius: 4px;
+  font-size: 17px;
+  display: inline-block;
+}
+
+.quote-area .quote-content a:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left top, right top, color-stop(23%, #10c317), color-stop(64%, #15d09a));
+  background: linear-gradient(90deg, #10c317 23%, #15d09a 64%);
+  z-index: -1;
+  border-radius: 4px;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+}
+
+.quote-area .quote-content a i {
+  display: inline-block;
+  font-size: 22px;
+  position: relative;
+  top: 3px;
+  margin-right: 4px;
+}
+
+.quote-area .quote-content a:hover:before {
+  width: 0;
+}
+
+.quote-area .quote-img {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+/*-- FAQ --*/
+.faq-area {
+  background-image: url("../img/faq-bg.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.faq-area .section-title {
+  text-align: center;
+}
+
+.accordion {
+  width: 90%;
+  max-width: 1000px;
+  margin: 2rem auto;
+}
+
+.accordion-item {
+  background-color: #fff;
+  color: #111;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.25);
+          box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.25);
+}
+
+.accordion-item-header {
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  min-height: 3.5rem;
+  line-height: 1.25rem;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.accordion-item-header::after {
+  content: "\25BE";
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+}
+
+.accordion-item-header.active::after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.accordion-item-body {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
+}
+
+.accordion-item-body-content {
+  padding: 1rem;
+  line-height: 1.5rem;
+  border-top: 3px solid;
+  -o-border-image: linear-gradient(to right, transparent, #10c317, transparent) 1;
+     border-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#10c317), to(transparent)) 1;
+     border-image: linear-gradient(to right, transparent, #10c317, transparent) 1;
 }
 /*# sourceMappingURL=style.css.map */
