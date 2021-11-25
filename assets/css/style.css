@@ -1343,4 +1343,166 @@ button:focus {
 }
 
 /*-- End Testimonial --*/
+/* -- Contact -- */
+.contact-area {
+  background-color: #0d1820;
+}
+
+.contact-area .contact-img {
+  background-image: url("../img/banner.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.contact-area .contact-content {
+  padding: 100px 0 100px;
+  max-width: 635px;
+  margin-left: 50px;
+}
+
+.contact-area .contact-content .section-title {
+  text-align: left;
+  margin-bottom: 30px;
+  margin-left: 15px;
+}
+
+.contact-area .contact-content .section-title h2 {
+  color: #ffffff;
+}
+
+.contact-area .contact-content .form-group {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.contact-area .contact-content .form-group label {
+  margin: 0;
+  color: #7f7f7f;
+  display: inline-block;
+  font-size: 18px;
+  position: absolute;
+  top: 12px;
+  left: 25px;
+}
+
+.contact-area .contact-content .form-group .form-control {
+  height: 50px;
+  border-radius: 0;
+  background-color: #ffffff;
+  padding-left: 50px;
+  border: 0;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.contact-area .contact-content .form-group .form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 0;
+}
+
+.contact-area .contact-content .form-group textarea {
+  height: auto !important;
+  padding-top: 12px;
+}
+
+.contact-area .contact-content .form-group ::-webkit-input-placeholder {
+  color: #7f7f7f;
+}
+
+.contact-area .contact-content .form-group :-ms-input-placeholder {
+  color: #7f7f7f;
+}
+
+.contact-area .contact-content .form-group ::-ms-input-placeholder {
+  color: #7f7f7f;
+}
+
+.contact-area .contact-content .form-group ::placeholder {
+  color: #7f7f7f;
+}
+
+.contact-area .contact-content .contact-btn {
+  color: #ffffff;
+  position: relative;
+  background-color: #ffffff;
+  z-index: 1;
+  padding: 11px 17px 12px 14px;
+  border-radius: 4px;
+  font-size: 15px;
+  display: inline-block;
+  opacity: 1;
+  text-transform: uppercase;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+  border: 0;
+  margin-top: 20px;
+  margin-left: -15px;
+}
+
+.contact-area .contact-content .contact-btn:before {
+  position: absolute;
+  content: " ";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left top, right top, color-stop(23%, #10c317), color-stop(64%, #15d09a));
+  background: linear-gradient(90deg, #10c317 23%, #15d09a 64%);
+  z-index: -1;
+  border-radius: 4px;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+}
+
+.contact-area .contact-content .contact-btn i {
+  display: inline-block;
+  font-size: 22px;
+  position: relative;
+  top: 4px;
+  margin-right: 4px;
+}
+
+.contact-area .contact-content .contact-btn:hover {
+  color: #0d1820;
+}
+
+.contact-area .contact-content .contact-btn:hover:before {
+  width: 0;
+}
+
+.contact-area .contact-content .callback {
+  position: relative;
+  padding-left: 75px;
+  margin-top: 15px;
+}
+
+.contact-area .contact-content .callback i {
+  display: inline-block;
+  color: #ffffff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 60px;
+}
+
+.contact-area .contact-content .callback span {
+  display: block;
+  font-weight: 500;
+  font-size: 22px;
+  color: #ffffff;
+}
+
+.contact-area .contact-content .callback a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.contact-area .contact-content .callback a:hover {
+  color: #12ca59;
+}
 /*# sourceMappingURL=style.css.map */
