@@ -1066,3 +1066,154 @@ button:focus {
     )
     1;
 }
+
+/*-- Testimonial --*/
+.testimonial-area {
+  .testimonial-item {
+    text-align: center;
+    background-color: $white-color;
+    box-shadow: 0px 0px 20px 0px #dddddd85;
+    padding: 30px 50px 30px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    transition: $transition;
+
+    &:hover,
+    &.active {
+      background-color: #0d1820;
+      transform: translate(0, -10px);
+
+      .testimonial-top {
+        ul {
+          &:before {
+            background-color: #172631;
+          }
+          &:after {
+            background-color: #172631;
+          }
+        }
+        .test-img {
+          img {
+            border: 8px solid #314c60;
+            box-shadow: none;
+          }
+        }
+        h3 {
+          color: $white-color;
+        }
+        span {
+          border-bottom: 1px solid #172631;
+        }
+      }
+      .testimonial-bottom {
+        span {
+          color: $white-color;
+        }
+        p {
+          color: #b2bac0;
+        }
+      }
+    }
+    .testimonial-top {
+      margin-bottom: 15px;
+
+      .testimonial-img {
+        position: relative;
+        display: inline-block;
+
+        img {
+          box-shadow: 0px 0px 20px 0px #dddddd85;
+          border: 8px solid $white-color;
+          border-radius: 50%;
+          transition: $transition;
+        }
+        i {
+          width: 45px;
+          height: 45px;
+          line-height: 45px;
+          border-radius: 50%;
+          text-align: center;
+          color: $white-color;
+          background: $gradient-green;
+          font-size: 20px;
+          position: absolute;
+          right: 0;
+          bottom: 0;
+        }
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+        margin-top: 30px;
+        position: relative;
+        margin-bottom: 20px;
+
+        &:before {
+          position: absolute;
+          content: "";
+          left: -35px;
+          top: 10px;
+          width: 34%;
+          height: 2px;
+          background-color: #ecf3f7;
+          transition: $transition;
+        }
+        &:after {
+          position: absolute;
+          content: "";
+          right: -35px;
+          top: 10px;
+          width: 34%;
+          height: 2px;
+          background-color: #ecf3f7;
+          transition: $transition;
+        }
+        li {
+          list-style-type: none;
+          display: inline-block;
+          margin-right: 3px;
+          margin-left: 3px;
+
+          i {
+            color: #ddd;
+            font-size: 20px;
+          }
+          .checked {
+            color: #ff9c00;
+          }
+        }
+      }
+      h3 {
+        font-weight: 500;
+        font-size: 20px;
+        margin-bottom: 8px;
+        transition: $transition;
+      }
+      span {
+        display: block;
+        font-size: 15px;
+        color: #11c744;
+        padding-bottom: 18px;
+        border-bottom: 1px solid #dce8f0;
+        transition: $transition;
+      }
+    }
+    .testimonial-bottom {
+      span {
+        color: #3b474f;
+        font-weight: 500;
+        font-size: 17px;
+        margin-bottom: 6px;
+        display: block;
+        transition: $transition;
+      }
+      p {
+        color: #555555;
+        font-size: 15px;
+        margin-bottom: 0;
+        transition: $transition;
+      }
+    }
+  }
+}
+/*-- End Testimonial --*/
