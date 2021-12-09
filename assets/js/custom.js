@@ -1,24 +1,24 @@
 jQuery(function ($) {
   ("use strict");
 
-  //Menu
-  $(window).on("scroll", function () {
-    if ($(this).scrollTop() > 50) {
-      $(".navbar-light").addClass("menu-shrink");
-    } else {
-      $(".navbar-light").removeClass("menu-shrink");
-    }
-  });
-  $(".navbar-nav .nav-item .nav-link").on("click", function (event) {
-    let anchor = $(this);
-    $("html", "body").stop.animate(
-      {
-        scrollTop: $(anchor.attr("href")).offset().top - 50,
-      },
-      1500
-    );
-    event.preventDefault();
-  });
+  //   //Menu
+  //   $(window).on("scroll", function () {
+  //     if ($(this).scrollTop() > 50) {
+  //       $(".navbar-light").addClass("menu-shrink");
+  //     } else {
+  //       $(".navbar-light").removeClass("menu-shrink");
+  //     }
+  //   });
+  //   $(".navbar-nav .nav-item .nav-link").on("click", function (event) {
+  //     let anchor = $(this);
+  //     $("html", "body").stop.animate(
+  //       {
+  //         scrollTop: $(anchor.attr("href")).offset().top - 50,
+  //       },
+  //       1500
+  //     );
+  //     event.preventDefault();
+  //   });
   // $(document).on("click", ".navbar-collapse.show", function (e) {
   //   if ($(e.target).is("a") && $(e.target).attr("class") != "dropdown-toggle") {
   //     $(this).collapse("hide");
@@ -75,4 +75,34 @@ jQuery(function ($) {
   jQuery(window).on("load", function () {
     jQuery(".loader").fadeOut(500);
   });
+
+  // Smoth Scroll and PageUp
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 1600) {
+      $(".pageup").fadeIn();
+    } else {
+      $(".pageup").fadeOut();
+    }
+  });
+  $("a[href^='#]").click(function () {
+    const _href = $(this).attr("href");
+    $("html, body").animate({
+      scrollTop: $(_href).offset().top + 400,
+    });
+  });
 });
+
+// // Smoth Scroll and pageup
+// let anchors = document.querySelectorAll('#navbarSupportedContent a[href*="#"]');
+// for (anchor of anchors) {
+//   if (anchor) {
+//     anchor.addEventListener("click", function (e) {
+//       e.preventDefault();
+//       anchorId = this.getAttribute("href");
+//       document.querySelector(anchorId).scrollIntoView({
+//         behavior: "smooth",
+//         block: "start",
+//       });
+//     });
+//   }
+// }
